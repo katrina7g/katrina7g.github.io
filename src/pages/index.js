@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import GithubImage from "../components/image"
 import NavBar from "../components/navBar"
 import SEO from "../components/seo"
 
@@ -17,7 +17,13 @@ const IndexPage = () => (
       <br />
       I'm a software engineer.
     </p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, display: 'flex', flexDirection: 'row', justifyContent: 'flex-start'}}>
+      <a href={"https://www.linkedin.com/in/katrina7g/"} rel="noreferrer" target="_blank">
+        LinkedIn
+      </a>
+      <a href={"https://github.com/katrina7g"} rel="noreferrer" target="_blank">
+        GitHub
+      </a>
     </div>
   </Layout>
 )
